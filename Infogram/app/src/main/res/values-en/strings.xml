@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Infogram</string>
+    <string name="nombre_de_usuario">User name</string>
+    <string name="contrasena">Password</string>
+    <string name="button_text">LOGIN</string>
+</resources>
