@@ -9,6 +9,9 @@ import androidx.core.graphics.Insets;
 import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
 
+import com.kimberly.infogram.view.ContainerActivity;
+import com.kimberly.infogram.view.CreateAccontActivity;
+
 public class LoginActivity extends AppCompatActivity {
 
     @Override
@@ -24,6 +27,11 @@ public class LoginActivity extends AppCompatActivity {
     }
     public void goCreateAcoount(View view) {
         Intent intent = new Intent(this, CreateAccontActivity.class);
+        startActivity(intent);
+    }
+
+    public void login(View view) {
+        Intent intent= new Intent(this, ContainerActivity.class);
         startActivity(intent);
     }
 }

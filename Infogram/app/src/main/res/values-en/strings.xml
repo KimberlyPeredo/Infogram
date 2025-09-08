@@ -11,4 +11,10 @@
     <string name="button_text_create_account">ÚNETE</string>
     <string name="no_tienes_cuenta">¿No tienes cuenta?</string>
     <string name="crea_una_aqui">crea una aquí</string>
+    <string name="carlos_vargas_cardview">Carlos Vargas</string>
+    <string name="hace_cardview">Hace</string>
+    <string name="dias_cardview">" 4 dias"</string>
+    <string name="me_gusta_cardview">10 me gusta</string>
+    <string name="home_item">Home</string>
+    <string name="yo_item">Yo</string>
 </resources>

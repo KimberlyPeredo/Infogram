@@ -12,11 +12,16 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Infogram">
         <activity
-            android:name=".CreateAccontActivity"
-            android:parentActivityName=".CreateAccontActivity"/>
-            <meta-data
-                android:name="android.support.PARENT_ACTIVITY"
-                android:value=".LoginActivity"/>
+            android:name=".view.ContainerActivity"
+            android:exported="false" />
+        <activity
+            android:name=".view.CreateAccontActivity"
+            android:parentActivityName=".view.CreateAccontActivity" />
+
+        <meta-data
+            android:name="android.support.PARENT_ACTIVITY"
+            android:value=".LoginActivity" />
+
         <activity
             android:name=".LoginActivity"
             android:exported="true">
