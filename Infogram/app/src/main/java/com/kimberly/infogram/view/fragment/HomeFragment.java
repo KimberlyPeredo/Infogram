@@ -2,6 +2,7 @@ package com.kimberly.infogram.view.fragment;
 
 import android.os.Bundle;
 
+import androidx.appcompat.widget.Toolbar;
 import androidx.fragment.app.Fragment;
 
 import android.view.LayoutInflater;
@@ -61,6 +62,17 @@ public class HomeFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_home, container, false);
+        View view =inflater.inflate(R.layout.fragment_home, container, false);
+
+        //toolbar
+
+        return view;
+    }
+    public void showToolBar(String titulo, boolean botonSubir,View view) {
+        Toolbar toolbar= view.findViewById(R.id.toolbar);
+        ((AppCompatActivity) getActivity()).setSupportActionBar(toolbar);
+
+        getSupportActionBar().setTitle(titulo);
+        getSupportActionBar().setDisplayHomeAsUpEnabled(botonSubir);
     }
 }

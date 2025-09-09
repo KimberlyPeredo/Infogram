@@ -9,6 +9,7 @@ import com.kimberly.infogram.R;
 import com.kimberly.infogram.view.fragment.HomeFragment;
 import com.kimberly.infogram.view.fragment.ProfileFragment;
 import com.kimberly.infogram.view.fragment.SearchFragment;
+
 public class ContainerActivity extends AppCompatActivity {
 
     @Override
