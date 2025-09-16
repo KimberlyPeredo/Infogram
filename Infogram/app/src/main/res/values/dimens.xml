@@ -35,7 +35,7 @@
     <dimen name="marginTop_username_image_profile">8dp</dimen>
     <dimen name="actionBarSize">56dp</dimen>
     <dimen name="size_circle_image_profile_start">140dp</dimen>
-    <dimen name="size_circle_image_profile_end">56dp</dimen>   
+    <dimen name="size_circle_image_profile_end">56dp</dimen>
     <dimen name="marginLeft_profile_end">16dp</dimen>
     <dimen name="marginTop_profile_end">8dp</dimen>
 
