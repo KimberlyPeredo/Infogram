@@ -101,8 +101,6 @@
                 </RelativeLayout>
             </LinearLayout>
         </ScrollView>
-
-
     </LinearLayout>
 
 </androidx.coordinatorlayout.widget.CoordinatorLayout>

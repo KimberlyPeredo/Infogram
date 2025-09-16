@@ -1,12 +1,15 @@
 package com.kimberly.infogram.adapter;
 
 import android.app.Activity;
+import android.content.Intent;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.TextView;
 
+import com.kimberly.infogram.view.ImageDetailActivity;
+import com.squareup.picasso.Picasso;
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
@@ -14,14 +17,14 @@ import com.kimberly.infogram.R;
 import com.kimberly.infogram.model.Image;
 
 import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.List;
+
 
 public class CardViewAdapter extends RecyclerView.Adapter<CardViewAdapter.CardViewHolder> {
  //Lista de imagenes
     private ArrayList<Image> images;
     private int resource;
     private Activity activity;
+
 
     public CardViewAdapter(ArrayList<Image> images, int resource, Activity activity) {
         this.images = images;
@@ -36,16 +39,25 @@ public class CardViewAdapter extends RecyclerView.Adapter<CardViewAdapter.CardVi
 
         return new CardViewHolder(view);
     }
-
     @Override
     public void onBindViewHolder(@NonNull CardViewHolder holder, int position) {
-        Image image=images.get(position);
-        //image
+        Image image = images.get(position);
+
+        // Carga de imagen con Picasso
+        Picasso.get().load(image.getUrlImagen()).into(holder.imageCardView);
 
         holder.usernameCardView.setText(image.getUsername());
         holder.cantidadDiasCardView.setText(image.getCantidadDias());
         holder.cantidadMeGustaCardView.setText(image.getCantidadMeGusta());
 
+        //onclicklistener
+        holder.imageCardView.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent=new  Intent(activity, ImageDetailActivity.class);
+                activity.startActivity(intent);
+            }
+        });
     }
 
     @Override

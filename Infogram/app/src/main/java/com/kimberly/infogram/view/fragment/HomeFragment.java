@@ -100,16 +100,16 @@ public class HomeFragment extends Fragment {
     public ArrayList<Image> buidImages(){
         ArrayList<Image> images=new ArrayList<>();
 
-        images.add(new Image("", "Carlos Valdivia", " 2 dias", "1 me gusta"));
-        images.add(new Image("", "Luis Perez", " 3 dias", "5 me gusta"));
-        images.add(new Image("", "Fernando Torrico", " 6 dias", "4 me gusta"));
-        images.add(new Image("", "Laura Flores", " 5 dias", "6 me gusta"));
-        images.add(new Image("", "Rolando Morales", " 7 dias", "2 me gusta"));
-        images.add(new Image("", "Lorena Rivera", " 2 dias", "5 me gusta"));
-        images.add(new Image("", "Carlos Valdivia", " 3 dias", "3 me gusta"));
-        images.add(new Image("", "Maria Caceres", " 9 dias", "8 me gusta"));
-        images.add(new Image("", "Marcelo Rojas", " 4 dias", "3 me gusta"));
-        images.add(new Image("", "William Jaimes", " 8 dias", "1 me gusta"));
+        images.add(new Image("https://i0.wp.com/elcalderoviajero.com/wp-content/uploads/2018/04/bolivia-cochabamba-incachaca-13.jpg?resize=750%2C500&ssl=1", "Carlos Valdivia", " 2 dias", "1 me gusta"));
+        images.add(new Image("https://www.civitatis.com/f/bolivia/cochabamba/big/tour-cochabamba-cristo-concordia.jpg", "Luis Perez", " 3 dias", "5 me gusta"));
+        images.add(new Image("https://whc.unesco.org/uploads/thumbs/site_0883_0010-594-0-20151104160341.jpg", "Fernando Torrico", " 6 dias", "4 me gusta"));
+        images.add(new Image("https://www.ine.gob.bo/wp-content/uploads/2019/07/Coroico5.png", "Laura Flores", " 5 dias", "6 me gusta"));
+        images.add(new Image("https://media.tacdn.com/media/attractions-splice-spp-674x446/06/6f/60/ca.jpg", "Rolando Morales", " 7 dias", "2 me gusta"));
+        images.add(new Image("https://www.infodiez.com/wp-content/uploads/2024/09/teleferico-infodiez.jpg", "Lorena Rivera", " 2 dias", "5 me gusta"));
+        images.add(new Image("https://www.dejarlotodoparaviajar.com/wp-content/uploads/2018/03/Copacabana-Bolivia-Playa.jpg", "Carlos Valdivia", " 3 dias", "3 me gusta"));
+        images.add(new Image("https://faculty.ucr.edu/~legneref/biados/PuertaDelSol/jpg3/historia1-1.jpg", "Maria Caceres", " 9 dias", "8 me gusta"));
+        images.add(new Image("https://ichef.bbci.co.uk/ace/ws/304/amz/worldservice/live/assets/images/2013/02/01/130201162058_virgin_of_the_socavon_statue_bolivia_304x171_reuters.jpg.webp", "Marcelo Rojas", " 4 dias", "3 me gusta"));
+        images.add(new Image("https://www.yaya.com.bo/wp-content/uploads/2020/01/Glorieta_Sucre_Bolivia.jpg", "William Jaimes", " 8 dias", "1 me gusta"));
 
         return images;
     }
